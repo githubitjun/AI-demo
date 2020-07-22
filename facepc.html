@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="css/face.css">
+<link rel="stylesheet" href="css/faceColour.css">
+<script src="js/jq.js"></script>
+<script src="js/face1.js"></script>
+<!-- <script type="text/javascript" src="js/ccv.js"></script>
+<script type="text/javascript" src="js/face.js"></script>
+<script type="text/javascript" src="js/stackblur.js"></script>
+<script type="text/javascript" src="./js/vconsole.min.js"></script> -->
+<script type="text/javascript" src="./js/utils.js"></script>
+<script type="text/javascript" src="./js/clmtrackr.js"></script>
+<title>人脸识别</title>
+</head>
+<body>
+  <div class="fonts18 hui51_bg header_face pc_flag">
+    <img class="xiaoyu" style="width: 16px" src="img/xiaoyu.png" alt="">
+     <span>人脸识别</span>
+  </div>
+  <div class="facepc">
+    <div class="facepc_box">
+      <div class="facepc_box_header fonts18 red_bg">
+        请正对屏幕
+      </div>
+      <div class="xianshi pc_flag1 bg_xiaoshi1" style="width: 100%;" ></div>
+      <div class="xianshi pc_flag bg_xiaoshi" style="width: 100%;" ></div>
+      <!-- <img class="xianshi pc_flag1" style="width: 100%;" src="img/xianshi1.png" alt="">
+      <img class="xianshi pc_flag" style="width: 100%;" src="img/xianshi.png" alt=""> -->
+      <canvas id="overlay" height="304" ></canvas> 
+      <video id="video"  width="400" height="300" preload="auto" loop playsinline muted autoplay webkit-playsinline='true' ></video>
+      <!-- <img class="sb_face" src="img/sb_0212.png" alt=""> -->
+      <div class="sb_face"></div>
+      <!-- 底部 -->
+      <div class="facepc_box_foot hui51_bg">
+        <div class="facepc_box_foot_title">
+          <p>
+            <span>请保证本人验证</span>
+          </p>
+          <p>
+            <span>请示头像正面位于画框中</span>
+          </p>
+          <p>
+            <span>请示头像尽量清晰</span>
+          </p>
+          <p>
+            <span>请保证眼睛不反光、双眼可见</span>
+          </p>
+          <p>
+            <span>请保证无墨镜、口罩、面膜等遮掩物</span>
+          </p>
+          <p>
+            <span>请不要化浓妆、不要戴帽子</span>
+          </p>
+        </div>
+        <div class="paizao cc" id="cc">
+          <div class="foot_but paizaobnt">
+              <button id="capture">开始</button>
+          </div>
+        </div>
+        <div class="paizao" id="dd">
+          <div class="foot_but paizaobnt ff">
+          </div>
+        </div>
+        <!-- 移动 -->
+        <div class="shade_face">
+          <div class="up_face">
+            <div class="tou_face">
+              <canvas style="display: none;" id="canvas"></canvas>
+              <div id="image_for_crop1"></div>
+            </div>
+            <div class="but_face">
+              <button class="again_face red fonts15">重新拍照</button>
+              <button class="up_but red_bg fonts15">上传认证1</button>
+            </div>
+          </div>
+        </div>
+        <!-- pc -->
+        <div class="eject_box">
+            <div class="eject_box_top">
+              <canvas style="display: none;" id="canvas1"  width="200" height="150"></canvas>
+              <div style="width: 200px;" id="image_for_crop"></div>
+              <div width="544px" class="huabudiv"></div>
+              <!-- <img  width="544px" src="img/neiyuan.png" alt=""> -->
+            </div>
+            <div class="but_face">
+              <button class="again_face red fonts18">重新拍照</button>
+              <button class="up_but red_bg fonts18">上传认证</button>
+            </div>
+        </div>
+    </div>
+  </div>
+</body>
+</html>

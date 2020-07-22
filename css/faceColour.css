@@ -1,0 +1,16 @@
+/* 常用颜色 */
+.red_bg{
+    background: #ff662f;
+}
+.red{
+    color: #ff662f;
+}
+.hui51_bg{
+    background: rgb(51, 51, 51);
+}
+.hui51{
+    color: rgb(51, 51, 51);
+}
+.hui153{
+    color: rgb( 153, 153, 153 );
+}
